@@ -1,11 +1,9 @@
-import PropTypes from 'prop-types';
 import StatisticalDataItem from './StatisticalDataItem';
-export default function StatisticalData({stats}) {
+import stats from '..';
+export default function StatisticalData({ stats }) {
   return (
-    <section className="statistics">
-    <h2 className="title">Upload stats</h2>
-
     <ul className="stat-list">
+      fdgdsfgsdf
       {stats.map(data => (
         <li className="item" key={data.id}>
           <StatisticalDataItem
@@ -15,6 +13,5 @@ export default function StatisticalData({stats}) {
         </li>
       ))}
     </ul>
-    </section>
   );
 }

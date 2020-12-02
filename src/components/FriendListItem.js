@@ -1,20 +1,11 @@
 import PropTypes from 'prop-types';
-export default function FriendListItem({ type, amount, currency }) 
-{
+export default function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <tbody>
-      <tr>
-      <td>{type}</td>
-        <td>{amount}</td>
-        <td>{currency}</td>
-      </tr>
-      <tr>
-        <td>{type}</td>
-        <td>{amount}</td>
-        <td>{currency}</td>
-      </tr>
-    </tbody>
-  
+    <>
+      <span class="status">{isOnline}</span>
+      <img class="avatar" src={avatar} alt="" width="48" />
+      <p class="name">{name}</p>
+    </>
   );
 }
 
